@@ -103,4 +103,18 @@ const mobil = [
 console.log(mobil)
 console.table(mobil)
 
+//get data index n
+console.log('Data Index ke 4 = ', mobil[4])
+
+//Find length/jumlah data
+console.log(mobil.length)
+
+//ARRAY METHODS
+mobil.push('Kijang')
+console.log(mobil)
+
+
+
+
+
 
