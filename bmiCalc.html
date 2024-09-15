@@ -8,15 +8,19 @@
 </head>
 <body>
     
-
-    <div id="resultNumber"></div>
-    <div id="resultCategory"></div>
-
-
-    <input type="number" id="inputHeight" placeholder="Tinggi"/>
-    <input type="number" id="inputWeight" placeholder="Berat"/>
-    <button onclick="bmiCalc()">Submit</button>
-
+<div class="bmiCalcBox">
+    <div class="container">
+        
+        <div id="resultNumber"></div>
+        <div id="resultCategory"></div>
+        
+        <input class="form-control" type="number" id="inputHeight" placeholder="Tinggi"/>
+        
+        <input class="form-control" type="number" id="inputWeight" placeholder="Berat"/>
+        
+        <button class="btn btn-warning" onclick="bmiCalc()">Submit</button>
+    </div>
+</div>
 
 
     <script src="bmiCalc.js"></script>
