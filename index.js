@@ -114,7 +114,84 @@ mobil.push('Kijang')
 console.log(mobil)
 
 
+//LOOPING
+
+//for
+for(index = 0; index < mobil.length; index += 1){
+    console.log(mobil[index])
+}
+
+//for in
+const user = {
+    fullName : 'Jhon',
+    email : 'jhon@mail.co',
+    age:  '25'
+}
+let print = ''
+for(let data in user){
+    print += user[data] + ' '
+}
+console.log(print)
 
 
+//for of
+// let print2 = ''
+// for(let data2 of user){
+//     print2 += data2
+// }
+// console.log(print2)
+
+const food = [
+    {
+        id : 1,
+        rasa: 'Manis',
+        warna: 'Merah',
+        bentuk: 'Bulat'
+    },
+    {
+        id : 2,
+        rasa: 'Pahit',
+        warna: 'Kuning',
+        bentuk: 'Kotak'
+    },
+    {
+        id : 3,
+        rasa: 'Asam',
+        warna: 'Hijau',
+        bentuk: 'Bulat'
+    }
+]
+food.forEach(foods => {
+    for(let value in foods){
+        console.log(`${foods[value]}`)
+        //data = `${foods[value]}`
+        //document.getElementsByTagName('p').innerHTML = data
+    }
+})
+
+
+//FUNCTION
+
+//declaration
+function userLogin(fullname, email){
+    console.log(`Full Name: ${fullname}, Email: ${email}`)
+}
+userLogin('Dwi Pamungkas', 'dw.pamungkas@gmail.com')
+
+
+//expression1
+const userLogin2 = function(fullname, email){
+    const resultUser = `Full Name: ${fullname}, Email: ${email}`
+    return resultUser
+}
+console.log(userLogin2('Dwi Pamungkas', 'dw.pamungkas@gmail.com'))
+
+
+//expression2 - arrow function
+const userLogin3 = (fullname, email) => {
+    const resultUser = `Full Name: ${fullname}, Email: ${email}`
+    return resultUser
+}
+console.log(userLogin3('Dwi Pamungkas', 'dw.pamungkas@gmail.com'))
 
 
